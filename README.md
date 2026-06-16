@@ -29,6 +29,9 @@ The pipeline demonstrates deterministic identity protection across multiple targ
 
 ## Project Structure
 
-image_processing.py      # Testing script, visualization hooks, and metric engines
-requirements.txt         # Package dependency tree
-README.md                # System documentation
+```text
+├── image_processing.py      # Master testing script, visualization hooks, and metric engines
+├── defend.py                # Core perturbation optimization engine (L_inf PGD step)
+├── edit.py                  # Generative model attack simulator (Stable Diffusion diffusion loop)
+├── requirements.txt         # Package dependency tree
+└── README.md                # System documentation
